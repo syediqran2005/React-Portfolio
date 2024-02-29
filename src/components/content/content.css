@@ -30,6 +30,10 @@
     text-align: left;
     line-height: 1.2;
     font-size: 4rem;
-    margin-left: 6%;
-
+    margin-left: 1%;
+}
+.experienceStyle{
+    font-size: 10rem;
+    letter-spacing: -5px;
+    line-height: 0.9;
 }
