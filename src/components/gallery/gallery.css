@@ -1,0 +1,14 @@
+.image {
+    margin-top: 16%;
+    margin-left: 33%;
+    width: 34%;
+    height: 75vh;
+    border-radius: 50px;
+}
+.text{
+    margin-top: 8%;
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.1;
+}
