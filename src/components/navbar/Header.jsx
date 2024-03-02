@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css'
 
@@ -46,7 +47,7 @@ function Header() {
           fontWeight : 'bolder',
           letterSpacing : '1px',
         }}>
-          LET'S CONNECT <a href="#login" className='emailStyle' >syediqran2004@gmail.com</a>
+          LET'S CONNECT <Button variant="light" className='pt-2 pb-2 mt-3 mb-3'  style={{borderRadius : '50px', width: '16rem' , fontSize : '18px'}} >syediqran2004@gmail.com</Button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

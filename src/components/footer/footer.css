@@ -1,0 +1,14 @@
+.footerContainer{
+    background-color: black;
+    color: white;
+    height: 70vh;
+}
+.listStyle a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight:600;
+}
+.listStyle a:hover{
+    text-decoration: underline;
+}

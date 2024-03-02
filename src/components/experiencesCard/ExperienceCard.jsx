@@ -12,15 +12,15 @@ function ExperienceCard({ title, subTitle, text, year }) {
                     <Card className='experienceCardStyle mb-4 w-75' border='0'>
                         <Card.Header className='border-0' as={'h1'}>{title}</Card.Header>
                         <Card.Body>
-                            <blockquote className="blockquote mb-0">
+                            <blockquote className="blockquote mb-0" >
                                 <h5>
                                     {subTitle}
                                     <span style={{float : 'right'}}>{year}</span>
                                 </h5>
-                                <footer className="blockquote-footer ">
-                                    <h5 dangerouslySetInnerHTML={{ __html: text }}></h5>             
+                                <footer className="blockquote-footer mb-2" style={{borderBottom : '1px solid grey'}}>
+                                    <h5 dangerouslySetInnerHTML={{ __html: text }} ></h5>             
                                 </footer>
-                            </blockquote>
+                            </blockquote> 
                         </Card.Body>
                     </Card>
                 </Col>
