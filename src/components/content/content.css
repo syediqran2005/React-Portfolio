@@ -1,9 +1,7 @@
 .contentStyle {
-    width: 100%;
-    height: auto;
     background-color: #1a1a1a;
     color: white;
-
+    height: auto;
 }
 
 .titleStyle{
@@ -20,10 +18,10 @@
     margin-left: 28%;
 }
 .yearStyle{
-    position: relative;
-    top: 2%;
-    text-align: right;
+    float: right;
     margin-right: 28%;
+    margin-top: 5%;
+    
 }
 .skillStyle{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -37,3 +35,19 @@
     letter-spacing: -5px;
     line-height: 0.9;
 }
+
+@media (max-width: 768px) {
+    .titleStyle {
+      font-size: 2rem;
+    }
+    .textStyle {
+      font-size: 1rem;
+    }
+    .yearStyle {
+      font-size: 0.8rem;
+    }
+    .imageContainer img {
+      width: 100%; /* Adjust as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }

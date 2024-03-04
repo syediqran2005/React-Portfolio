@@ -16,7 +16,7 @@ function Content() {
       <div className="contentStyle">
         <Container>
           <Row>
-            <Col>
+            <Col xs={12} md={12}  >
               <h2 className="titleStyle">
                 SENIOR <br />
                 EXPERIENCE <br />
@@ -30,27 +30,21 @@ function Content() {
                 <Gallery src={gallerytwoimage} text={textOne} />
                 <Gallery src={galleryoneimage} text={textTwo} />
               </div>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
             </Col>
           </Row>
-        </Container>
+        </Container> <br /> <br /> <br /> <br /> <br />
+
+
         <Container>
           <div className="skillsContainer">
             <h3 className="skillStyle">
               My tried-and-true <br /> design process
-            </h3>{" "}
-            <br />
-            <br />
-            <br />
+            </h3> <br /> <br /> <br />
+
             {cardObject.length > 0 && (
               <Row>
                 {cardObject.map((element, index) => (
-                  <Col key={index} xs={12} lg={4} md={4}>
+                  <Col key={index} xs={12} lg={4} md={6}>
                     <SkillCard
                       number={element.number}
                       title={element.title}
@@ -61,19 +55,20 @@ function Content() {
               </Row>
             )}
           </div>
-        </Container>{" "}
-        <br /> <br /> <br /> <br />
+        </Container> <br /> <br /> <br /> <br />
+
+
         <Container>
           <div className="experienceContainer">
-            <h1 className="experienceStyle">
+            <h1 className="experienceStyle display-4 display-md-4">
               RELEVANT <br />
               EXPERIENCE
-            </h1>{" "}
-            <br /> <br /> <br />
+            </h1> <br /> <br /> <br />
+
             {experienceObject.length > 0 && (
               <Row>
                 {experienceObject.map((element, index) => (
-                  <Col key={index} xs={12} lg={12} md={4}>
+                  <Col key={index} xs={12} lg={12} md={12}>
                     <ExperienceCard
                       title={element.title}
                       subTitle={element.subTitle}
@@ -82,43 +77,35 @@ function Content() {
                     />
                   </Col>
                 ))}
-                <Col>
-                  <Button
-                    variant="light"
-                    style={{
-                      width: "11rem",
-                      borderRadius: "50px",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                      margin: "0% 2% 0% 15%",
-                    }}
-                    className=" p-2"
-                  >
-                    VIEW WORK
-                  </Button>
-                  <Button
-                    variant="dark"
-                    style={{
-                      width: "11rem",
-                      borderRadius: "50px",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                      border: "2px solid white",
-                    }}
-                    className="p-2"
-                  >
-                    VIEW RESUME
-                  </Button>
-                </Col>
               </Row>
             )}
-          </div>
-        </Container>{" "}
-        <br /> <br /> <br /> <br />
 
+            <Row className="justify-content-center">
+
+            </Row>
+            <Col xs={12} sm={6} className="text-center mb-3">
+              <Button
+                variant="light"
+                className="rounded-pill py-2 px-4 mr-sm-2 mb-2 "
+                style={{fontSize : '18px', marginRight: '3%'}}
+              >
+                VIEW WORK
+              </Button>
+              <Button
+                variant="dark"
+                className="rounded-pill py-2 px-4"
+                style={{fontSize : '18px'}}
+
+              >
+                VIEW RESUME
+              </Button>
+            </Col>
+          </div>
+        </Container> <br /> <br /> <br /> <br />
       </div>
     </>
   );
 }
 
 export default Content;
+

@@ -14,7 +14,7 @@ function App() {
 
       <Container fluid className= "pt-2" style={{backgroundColor : '#1a1a1a', color : 'white'}}>
           <Row>
-            <Col>
+            <Col xs={6} md={12}>
               <p style={{ marginLeft: "5%" }}>
                 DESIGNED & BUILT FROM THE DESK OF <b>DEVANTA EBISON</b>
                 <span style={{ float: "right" }}>

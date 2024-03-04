@@ -1,7 +1,7 @@
 .footerContainer{
     background-color: black;
     color: white;
-    height: 70vh;
+    height: auto;
 }
 .listStyle a {
     text-decoration: none;
